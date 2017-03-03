@@ -104,6 +104,8 @@ for kk=1:year
 end
 
 figure,plot(1:60,y)
+xlabel('Time (year)');
+ylabel('State value');
 
 [r,c]=size(input);
 
@@ -112,5 +114,8 @@ for kk=1:c
 end
 figure
 plot(input(1,:),output,'.k',input(1,:),yy,'.r')
+legend('Recorded data','Estimated by ANN')
+xlabel('Time (year)');
+ylabel('State value');
 
 
